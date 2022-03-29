@@ -3,7 +3,7 @@
 import logging
 
 
-def inputTwoWords(isRepeat = 'repeat'):
+def input_two_words(isRepeat = 'repeat'):
     word_1 = raw_input('Введите первое слово: ')
     word_2 = raw_input('Введите второе слов: ')
 
@@ -33,9 +33,9 @@ variant = input('Слова могут быть одинаковыми? \n(1) д
 number_of_letters_in_result = 0
 
 if (variant == 1):
-    number_of_letters_in_result = match_words(*inputTwoWords())
+    number_of_letters_in_result = match_words(*input_two_words())
 elif (variant == 2):
-    number_of_letters_in_result = match_words(*inputTwoWords('no-repeat'))
+    number_of_letters_in_result = match_words(*input_two_words('no-repeat'))
 else:
     print('Такого пункта нет!')
 
