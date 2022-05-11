@@ -1,37 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-flights = []
-
-
-def new_flight():
-    dictionary = {
-        'name': input('Введите название рейса: '),
-        'number': input('Введите номер рейса: '),
-        'destination': input('Введите пункт назначения: '),
-        'plane_type': input('Введите тип самолета: '),
-    }
-
-    return dictionary
-
-
-def set_flight(flight: {}):
-    flights.append(flight)
-
-
-def get_flight(plane_type: str):
-    arr = list(filter(lambda x: x.get('plane_type') == plane_type, flights))
-    return arr
-
-
-def print_flights(arr: []):
-    for elem in arr:
-        print(f'Название рейса: {elem.get("name")}')
-        print(f'Номер рейса: {elem.get("number")}')
-        print(f'Пункт назначения: {elem.get("destination")}')
-        print(f'Тип самолета: {elem.get("plane_type")}')
-        print('--------------')
-
+from new_flight import new_flight
+from print_flights import print_flights
+from flights import get_flight, set_flight
 
 exit = True
 while (exit):
