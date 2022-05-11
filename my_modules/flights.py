@@ -1,3 +1,5 @@
+__all__ = ['set_flight', 'get_flight']
+
 flights = []
 
 def set_flight(flight: {}):

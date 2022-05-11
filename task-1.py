@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-from new_flight import new_flight
-from print_flights import print_flights
-from flights import get_flight, set_flight
+from my_modules import new_flight, print_flights, get_flight, set_flight
 
 exit = True
 while (exit):
